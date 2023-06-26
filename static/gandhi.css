@@ -1,0 +1,7 @@
+.bordertop
+{
+    background-image: url({{ url_for('static', filename='gandhi.jpeg') }});
+    background-repeat: repeat-x;
+    height: 100px;
+    width: 100%; /* may not be necessary */
+}

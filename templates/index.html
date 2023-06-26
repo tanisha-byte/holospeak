@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Cloning</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <div class="header">
+      <h2 class="animation a1">Welcome Back</h2>
+      <h4 class="animation a2">Choose Freedom Fighter whose voice you want to clone</h4>
+    </div>
+    <form action="{{ url_for('submission') }}" method="post" class="form">
+      <select class="form-field animation a3" name="fighters" id="cars">
+        <option value="Mahatma Gandhi">Mahatma Gandhi</option>
+        <option value="APJ Abdul Kalam">APJ Abdul Kalam</option>
+        <option value="Sardar Vallabhai Patel">Sardar Vallabhai Patel</option>
+      </select>
+      <input class="form-field animation a4" name="req_text" placeholder="Input The Text">
+      <button type="submit" class="animation a6">SUBMIT</button>
+    </form>
+  </div>
+  <div class="right"></div>
+</div>
+
+</body>
+</html>
